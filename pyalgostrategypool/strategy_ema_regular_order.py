@@ -32,8 +32,7 @@ class StrategyEMARegularOrder(StrategyBase):
         hist_data = self.get_historical_data(instrument)
         ema_x = talib.EMA(hist_data['close'], timeperiod=self.timeperiod1)
         ema_y = talib.EMA(hist_data['close'], timeperiod=self.timeperiod2)
-        crossover_value = self.utils.crossover(ema_x, ema_y)
-        return crossover_value
+        return self.utils.crossover(ema_x, ema_y)
 
     def strategy_select_instruments_for_entry(self, candle, instruments_bucket):
 
@@ -44,31 +43,36 @@ class StrategyEMARegularOrder(StrategyBase):
             crossover_value = self.get_crossover_value(instrument)
             if crossover_value == 1:
                 selected_instruments_bucket.append(instrument)
-                sideband_info_bucket.append({'action': 'BUY'})
+                sideband_info_bucket.append({'action': BrokerOrderTransactionTypeConstants.BUY})
             elif crossover_value == -1:
                 if self.strategy_mode is StrategyMode.INTRADAY:
                     selected_instruments_bucket.append(instrument)
-                    sideband_info_bucket.append({'action': 'SELL'})
+                    sideband_info_bucket.append({'action': BrokerOrderTransactionTypeConstants.SELL})
 
         return selected_instruments_bucket, sideband_info_bucket
 
     def strategy_enter_position(self, candle, instrument, sideband_info):
-        if sideband_info['action'] == 'BUY':
+        if sideband_info['action'] == BrokerOrderTransactionTypeConstants.BUY:
             qty = self.number_of_lots * instrument.lot_size
             self.main_order[instrument] = \
-                self.broker.BuyOrderRegular(instrument=instrument,
-                                            order_code=BrokerOrderCodeConstants.INTRADAY,
-                                            order_variety=BrokerOrderVarietyConstants.MARKET,
-                                            quantity=qty)
-        elif sideband_info['action'] == 'SELL':
+                self.broker.place_order(instrument=instrument,
+                                        order_transaction_type=BrokerOrderTransactionTypeConstants.BUY,
+                                        order_type=BrokerOrderTypeConstants.REGULAR,
+                                        order_code=BrokerOrderCodeConstants.INTRADAY,
+                                        order_variety=BrokerOrderVarietyConstants.MARKET,
+                                        quantity=qty)
+        elif sideband_info['action'] == BrokerOrderTransactionTypeConstants.SELL:
             qty = self.number_of_lots * instrument.lot_size
             self.main_order[instrument] = \
-                self.broker.SellOrderRegular(instrument=instrument,
-                                             order_code=BrokerOrderCodeConstants.INTRADAY,
-                                             order_variety=BrokerOrderVarietyConstants.MARKET,
-                                             quantity=qty)
+                self.broker.place_order(instrument=instrument,
+                                        order_transaction_type=BrokerOrderTransactionTypeConstants.SELL,
+                                        order_type=BrokerOrderTypeConstants.REGULAR,
+                                        order_code=BrokerOrderCodeConstants.INTRADAY,
+                                        order_variety=BrokerOrderVarietyConstants.MARKET,
+                                        quantity=qty)
         else:
-            raise SystemExit(f'Got invalid sideband_info value: {sideband_info}')
+            raise SystemExit(
+                f'Got invalid sideband_info value: {sideband_info}')
 
         return self.main_order[instrument]
 
