@@ -1,0 +1,22 @@
+[2025-01-08 18:43:51] Performing sanity checks on cfg strategy_parameters, setting up required data structures...
+[2025-01-08 18:43:51] Sanity checks on cfg successful.
+[2025-01-08 18:43:51] Currency set to "INR"
+[2025-01-08 18:43:51] Setting up broker connection...
+[2025-01-08 18:43:52] Data feed connection could not be set up. Broking details are missing. Exiting...
+[2025-01-08 18:43:52] 
+
+PENDING ORDERS:
+
+
+COMPLETED ORDERS:
+
+
+POSITIONS:
+
+
+HOLDINGS:
+
+
+
+
+[2025-01-08 18:43:52] [User: USER] Trading session completed

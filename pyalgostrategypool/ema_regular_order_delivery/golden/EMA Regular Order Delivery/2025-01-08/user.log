@@ -1,0 +1,2399 @@
+[2025-01-08 18:44:34] Performing sanity checks on cfg strategy_parameters, setting up required data structures...
+[2025-01-08 18:44:34] Sanity checks on cfg successful.
+[2025-01-08 18:44:34] Currency set to "INR"
+[2025-01-08 18:44:34] Setting up broker connection...
+[2025-01-08 18:44:35] Broker connection has been setup successfully.
+[2025-01-08 18:44:35] (NSE_EQ) Funds available in client's ABVIRTUALBROKER account is : INR '1000000000.00'
+[2025-01-08 18:44:35] 
+########################################
+ INITIALIZING ALGOBULLS CORE (v3.3.0)... 
+########################################
+[2025-01-08 18:44:35] Welcome ALGOBULLS VIRTUAL USER!
+[2025-01-08 18:44:35] Reading strategy...
+[2025-01-08 18:44:35] Entering Backtesting mode. Henceforth, all timestamps will be Backtesting timestamps...
+[BT] [2023-01-01 09:15:00,000] [INFO] [tls] STARTING ALGOBULLS CORE...
+
+          #####  #######    #    ######  ####### ### #     #  #####
+         #     #    #      # #   #     #    #     #  ##    # #     #
+         #          #     #   #  #     #    #     #  # #   # #
+          #####     #    #     # ######     #     #  #  #  # #  ####
+               #    #    ####### #   #      #     #  #   # # #     #
+         #     #    #    #     # #    #     #     #  #    ## #     #
+          #####     #    #     # #     #    #    ### #     #  #####
+
+            #    #        #####  ####### ######  #     # #       #        #####
+           # #   #       #     # #     # #     # #     # #       #       #     #
+          #   #  #       #       #     # #     # #     # #       #       #
+         #     # #       #  #### #     # ######  #     # #       #        #####
+         ####### #       #     # #     # #     # #     # #       #             #
+         #     # #       #     # #     # #     # #     # #       #       #     #
+         #     # #######  #####  ####### ######   #####  ####### #######  #####
+
+          #####  ####### ######  #######
+         #     # #     # #     # #
+         #       #     # #     # #
+         #       #     # ######  #####
+         #       #     # #   #   #
+         #     # #     # #    #  #
+          #####  ####### #     # #######
+
+        --------------------Master Cfg Parameters:--------------------
+        User: ALGOBULLS VIRTUAL USER
+        Broker: ABVIRTUALBROKER
+        Auto add instruments bucket from positions: True
+        Auto add instruments bucket from holdings tplus1: True
+        Auto add instruments bucket from holdings tplus2: True
+        Resume positions on start: True
+        Resume holdings tplus1 on start: True
+        Resume holdings tplus2 on start: True
+        Exit intraday orders on stop: True
+        Exit tplus0 delivery orders on stop: False
+        Exit tplus1 delivery orders on stop: False
+        Exit tplus2 delivery orders on stop: False
+        --------------------User Cfg Parameters: System Parameters--------------------
+        Trading type: BACKTESTING
+        User trading start time: 2023-01-01 09:15:00+05:30
+        User trading end time: 2023-02-28 15:30:00+05:30
+        Fast mode: False
+        --------------------User Cfg Parameters: Funds Parameters--------------------
+        Credit exposure: 1
+        --------------------User Cfg Parameters: Candle Parameters--------------------
+        Candle interval (sec): 3600
+        --------------------User Cfg Parameters: Strategy Parameters--------------------
+        Strategy: EMA Regular Order Delivery
+        Version: v1
+        Parameters: [SEE BELOW]
+        Strategy mode: DELIVERY
+        Instruments bucket: instruments_bucket | [NSE_EQ:SBIN]
+        Number of lots: 2
+        --------------------User Cfg Parameters: Risk Management Parameters--------------------
+        Desired profit: None
+        Risk appetite: None
+        P&L scan frequency (in sec): 30
+        --------------------User Cfg Parameters: Other Parameters--------------------
+        Max orders count: 100
+        Crossover accuracy decimals: 2
+        ------------------------------------------------------------
+        
+[BT] [2023-01-01 09:15:00,000] [INFO] [utils] Instrument (NSE_EQ:SBIN) subscribed to historical data successfully
+[BT] [2023-01-01 09:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-01-01 09:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-01-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 09:15:00,000] [INFO] [strategy] 
+####################
+Strategy Parameters:
+StrategyParameters([('TIMEPERIOD1', 12), ('TIMEPERIOD2', 20)])
+####################
+[BT] [2023-01-01 09:15:00,000] [INFO] [tls] Not launching PNL tracker...
+[BT] [2023-01-01 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-01 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-01 10:15:00+05:30)...
+[BT] [2023-01-01 10:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 10:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-01 11:15:00+05:30)...
+[BT] [2023-01-01 11:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 11:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-01 12:15:00+05:30)...
+[BT] [2023-01-01 12:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 12:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-01 13:15:00+05:30)...
+[BT] [2023-01-01 13:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 13:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-01 14:15:00+05:30)...
+[BT] [2023-01-01 14:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 14:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-01 15:15:00+05:30)...
+[BT] [2023-01-01 15:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-01 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-01 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-01 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-01 16:15:00+05:30)...
+[BT] [2023-01-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-01 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-02 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-02 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-02 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-02 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.42      608.37
+  (LATEST)      611.86      608.94
+[BT] [2023-01-02 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-02 10:15:00+05:30)...
+[BT] [2023-01-02 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      611.86      608.94
+  (LATEST)      612.67      609.72
+[BT] [2023-01-02 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-02 11:15:00+05:30)...
+[BT] [2023-01-02 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      612.67      609.72
+  (LATEST)      612.87      610.12
+[BT] [2023-01-02 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-02 12:15:00+05:30)...
+[BT] [2023-01-02 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      612.87      610.12
+  (LATEST)      613.13      610.55
+[BT] [2023-01-02 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-02 13:15:00+05:30)...
+[BT] [2023-01-02 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.13      610.55
+  (LATEST)      613.34      610.92
+[BT] [2023-01-02 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-02 14:15:00+05:30)...
+[BT] [2023-01-02 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.34      610.92
+  (LATEST)      613.33      611.14
+[BT] [2023-01-02 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-02 15:15:00+05:30)...
+[BT] [2023-01-02 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.33      611.14
+  (LATEST)      613.21      611.28
+[BT] [2023-01-02 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-02 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-02 16:15:00+05:30)...
+[BT] [2023-01-02 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-02 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-03 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-03 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-03 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-03 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-03 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.21      611.28
+  (LATEST)      613.12       611.4
+[BT] [2023-01-03 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-03 10:15:00+05:30)...
+[BT] [2023-01-03 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.12       611.4
+  (LATEST)      613.41      611.75
+[BT] [2023-01-03 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-03 11:15:00+05:30)...
+[BT] [2023-01-03 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.41      611.75
+  (LATEST)      613.41      611.91
+[BT] [2023-01-03 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-03 12:15:00+05:30)...
+[BT] [2023-01-03 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.41      611.91
+  (LATEST)      613.14      611.88
+[BT] [2023-01-03 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-03 13:15:00+05:30)...
+[BT] [2023-01-03 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      613.14      611.88
+  (LATEST)       612.9      611.86
+[BT] [2023-01-03 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-03 14:15:00+05:30)...
+[BT] [2023-01-03 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       612.9      611.86
+  (LATEST)      612.93      611.98
+[BT] [2023-01-03 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-03 15:15:00+05:30)...
+[BT] [2023-01-03 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      612.93      611.98
+  (LATEST)      612.87      612.03
+[BT] [2023-01-03 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-03 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-03 16:15:00+05:30)...
+[BT] [2023-01-03 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-03 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-04 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-04 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-04 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-04 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-04 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      612.87      612.03
+  (LATEST)      612.88      612.11
+[BT] [2023-01-04 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-04 10:15:00+05:30)...
+[BT] [2023-01-04 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      612.88      612.11
+  (LATEST)      612.32      611.84
+[BT] [2023-01-04 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-04 11:15:00+05:30)...
+[BT] [2023-01-04 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      612.32      611.84
+  (LATEST)       611.5      611.37
+[BT] [2023-01-04 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-04 12:15:00+05:30)...
+[BT] [2023-01-04 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       611.5      611.37
+  (LATEST)      610.45      610.74
+[BT] [2023-01-04 12:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-01-04 12:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-04 12:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-04 12:15:00+05:30] [44fd8a5f112940aa91dd70f06a6caa72] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 604.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-04 12:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:44fd8a5f112940aa91dd70f06a6caa72] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-04 12:15:00+05:30] [44fd8a5f112940aa91dd70f06a6caa72] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 604.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-04 12:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-04 12:15:00+05:30] [44fd8a5f112940aa91dd70f06a6caa72] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 604.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-04 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-04 13:15:00+05:30)...
+[BT] [2023-01-04 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      610.45      610.74
+  (LATEST)      610.01      610.44
+[BT] [2023-01-04 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      610.45      610.74
+  (LATEST)      610.01      610.44
+[BT] [2023-01-04 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-04 14:15:00+05:30)...
+[BT] [2023-01-04 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      610.01      610.44
+  (LATEST)      609.71      610.21
+[BT] [2023-01-04 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      610.01      610.44
+  (LATEST)      609.71      610.21
+[BT] [2023-01-04 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-04 15:15:00+05:30)...
+[BT] [2023-01-04 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      609.71      610.21
+  (LATEST)      609.04      609.75
+[BT] [2023-01-04 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      609.71      610.21
+  (LATEST)      609.04      609.75
+[BT] [2023-01-04 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-04 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-04 16:15:00+05:30)...
+[BT] [2023-01-04 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-04 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-04 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-01-04 12:15:00+05:30] [44fd8a5f112940aa91dd70f06a6caa72] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 604.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-01-04 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-04 15:30:00+05:30] [1651b20892874f7787bd991276edf00c] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 605.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-04 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:1651b20892874f7787bd991276edf00c] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-04 15:30:00+05:30] [1651b20892874f7787bd991276edf00c] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 605.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-04 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-04 15:30:00+05:30] [1651b20892874f7787bd991276edf00c] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 605.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-05 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-05 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-05 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-05 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-05 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      609.04      609.75
+  (LATEST)      608.56      609.39
+[BT] [2023-01-05 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-05 10:15:00+05:30)...
+[BT] [2023-01-05 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      608.56      609.39
+  (LATEST)      608.58      609.32
+[BT] [2023-01-05 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-05 11:15:00+05:30)...
+[BT] [2023-01-05 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      608.58      609.32
+  (LATEST)      608.49      609.19
+[BT] [2023-01-05 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-05 12:15:00+05:30)...
+[BT] [2023-01-05 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      608.49      609.19
+  (LATEST)      608.24      608.97
+[BT] [2023-01-05 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-05 13:15:00+05:30)...
+[BT] [2023-01-05 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      608.24      608.97
+  (LATEST)      607.82      608.64
+[BT] [2023-01-05 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-05 14:15:00+05:30)...
+[BT] [2023-01-05 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      607.82      608.64
+  (LATEST)      607.21      608.19
+[BT] [2023-01-05 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-05 15:15:00+05:30)...
+[BT] [2023-01-05 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      607.21      608.19
+  (LATEST)      606.84      607.86
+[BT] [2023-01-05 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-05 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-05 16:15:00+05:30)...
+[BT] [2023-01-05 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-05 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-06 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-06 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-06 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-06 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-06 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      606.84      607.86
+  (LATEST)      606.67      607.66
+[BT] [2023-01-06 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-06 10:15:00+05:30)...
+[BT] [2023-01-06 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      606.67      607.66
+  (LATEST)      606.19      607.27
+[BT] [2023-01-06 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-06 11:15:00+05:30)...
+[BT] [2023-01-06 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      606.19      607.27
+  (LATEST)      605.83      606.95
+[BT] [2023-01-06 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-06 12:15:00+05:30)...
+[BT] [2023-01-06 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      605.83      606.95
+  (LATEST)      605.54      606.66
+[BT] [2023-01-06 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-06 13:15:00+05:30)...
+[BT] [2023-01-06 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      605.54      606.66
+  (LATEST)      604.54      605.94
+[BT] [2023-01-06 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-06 14:15:00+05:30)...
+[BT] [2023-01-06 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      604.54      605.94
+  (LATEST)      603.65      605.25
+[BT] [2023-01-06 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-06 15:15:00+05:30)...
+[BT] [2023-01-06 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      603.65      605.25
+  (LATEST)      603.29      604.87
+[BT] [2023-01-06 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-06 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-06 16:15:00+05:30)...
+[BT] [2023-01-06 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-06 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-09 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-09 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-09 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-09 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-09 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      603.29      604.87
+  (LATEST)      603.06      604.58
+[BT] [2023-01-09 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-09 10:15:00+05:30)...
+[BT] [2023-01-09 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      603.06      604.58
+  (LATEST)      603.46      604.68
+[BT] [2023-01-09 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-09 11:15:00+05:30)...
+[BT] [2023-01-09 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      603.46      604.68
+  (LATEST)      603.76      604.75
+[BT] [2023-01-09 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-09 12:15:00+05:30)...
+[BT] [2023-01-09 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      603.76      604.75
+  (LATEST)      604.13      604.89
+[BT] [2023-01-09 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-09 13:15:00+05:30)...
+[BT] [2023-01-09 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      604.13      604.89
+  (LATEST)      604.55      605.08
+[BT] [2023-01-09 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-09 14:15:00+05:30)...
+[BT] [2023-01-09 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      604.55      605.08
+  (LATEST)      604.83       605.2
+[BT] [2023-01-09 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-09 15:15:00+05:30)...
+[BT] [2023-01-09 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      604.83       605.2
+  (LATEST)      605.32      605.47
+[BT] [2023-01-09 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-09 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-09 16:15:00+05:30)...
+[BT] [2023-01-09 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-09 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-10 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-10 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-10 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-10 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-10 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      605.32      605.47
+  (LATEST)      605.78      605.74
+[BT] [2023-01-10 09:15:00,000] [INFO] [utils] Crossover: Cut upwards 
+[BT] [2023-01-10 09:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-10 09:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-10 09:15:00+05:30] [313890708ca1434a81cac4d401a97e7f] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 608.45] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-10 09:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:313890708ca1434a81cac4d401a97e7f] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-10 09:15:00+05:30] [313890708ca1434a81cac4d401a97e7f] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 608.45] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-10 09:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-10 09:15:00+05:30] [313890708ca1434a81cac4d401a97e7f] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 608.45] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-10 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-10 10:15:00+05:30)...
+[BT] [2023-01-10 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      605.78      605.74
+  (LATEST)      604.86      605.17
+[BT] [2023-01-10 10:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-01-10 10:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-10 10:15:00+05:30] [5a12e31621884351ade09f2bfd2f041c] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-10 10:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:5a12e31621884351ade09f2bfd2f041c] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-10 10:15:00+05:30] [5a12e31621884351ade09f2bfd2f041c] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-10 10:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-10 10:15:00+05:30] [5a12e31621884351ade09f2bfd2f041c] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-10 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      605.78      605.74
+  (LATEST)      604.86      605.17
+[BT] [2023-01-10 10:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-01-10 10:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-10 10:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-10 10:15:00+05:30] [4cb7336bd0c24457b23eba47298adc13] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-10 10:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:4cb7336bd0c24457b23eba47298adc13] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-10 10:15:00+05:30] [4cb7336bd0c24457b23eba47298adc13] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-10 10:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-10 10:15:00+05:30] [4cb7336bd0c24457b23eba47298adc13] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-10 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-10 11:15:00+05:30)...
+[BT] [2023-01-10 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      604.86      605.17
+  (LATEST)       603.5       604.3
+[BT] [2023-01-10 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      604.86      605.17
+  (LATEST)       603.5       604.3
+[BT] [2023-01-10 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-10 12:15:00+05:30)...
+[BT] [2023-01-10 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       603.5       604.3
+  (LATEST)      602.17       603.4
+[BT] [2023-01-10 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       603.5       604.3
+  (LATEST)      602.17       603.4
+[BT] [2023-01-10 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-10 13:15:00+05:30)...
+[BT] [2023-01-10 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      602.17       603.4
+  (LATEST)      600.77      602.42
+[BT] [2023-01-10 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      602.17       603.4
+  (LATEST)      600.77      602.42
+[BT] [2023-01-10 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-10 14:15:00+05:30)...
+[BT] [2023-01-10 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      600.77      602.42
+  (LATEST)      599.92      601.74
+[BT] [2023-01-10 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      600.77      602.42
+  (LATEST)      599.92      601.74
+[BT] [2023-01-10 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-10 15:15:00+05:30)...
+[BT] [2023-01-10 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      599.92      601.74
+  (LATEST)      599.19      601.11
+[BT] [2023-01-10 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      599.92      601.74
+  (LATEST)      599.19      601.11
+[BT] [2023-01-10 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-10 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-10 16:15:00+05:30)...
+[BT] [2023-01-10 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-10 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-10 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-01-10 10:15:00+05:30] [4cb7336bd0c24457b23eba47298adc13] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-01-10 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-10 15:30:00+05:30] [553beabb20ba4723b9afb7f15a1480a8] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 595.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-10 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:553beabb20ba4723b9afb7f15a1480a8] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-10 15:30:00+05:30] [553beabb20ba4723b9afb7f15a1480a8] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 595.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-10 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-10 15:30:00+05:30] [553beabb20ba4723b9afb7f15a1480a8] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 595.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-11 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-11 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-11 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-11 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-11 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      599.19      601.11
+  (LATEST)      598.62      600.57
+[BT] [2023-01-11 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-11 10:15:00+05:30)...
+[BT] [2023-01-11 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.62      600.57
+  (LATEST)      598.72      600.45
+[BT] [2023-01-11 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-11 11:15:00+05:30)...
+[BT] [2023-01-11 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.72      600.45
+  (LATEST)      598.71      600.28
+[BT] [2023-01-11 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-11 12:15:00+05:30)...
+[BT] [2023-01-11 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.71      600.28
+  (LATEST)      598.41      599.95
+[BT] [2023-01-11 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-11 13:15:00+05:30)...
+[BT] [2023-01-11 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.41      599.95
+  (LATEST)      598.09       599.6
+[BT] [2023-01-11 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-11 14:15:00+05:30)...
+[BT] [2023-01-11 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.09       599.6
+  (LATEST)      597.74      599.24
+[BT] [2023-01-11 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-11 15:15:00+05:30)...
+[BT] [2023-01-11 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.74      599.24
+  (LATEST)      597.57      598.99
+[BT] [2023-01-11 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-11 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-11 16:15:00+05:30)...
+[BT] [2023-01-11 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-11 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-12 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-12 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-12 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-12 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-12 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.57      598.99
+  (LATEST)      597.48       598.8
+[BT] [2023-01-12 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-12 10:15:00+05:30)...
+[BT] [2023-01-12 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.48       598.8
+  (LATEST)      597.01      598.39
+[BT] [2023-01-12 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-12 11:15:00+05:30)...
+[BT] [2023-01-12 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.01      598.39
+  (LATEST)      596.24      597.78
+[BT] [2023-01-12 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-12 12:15:00+05:30)...
+[BT] [2023-01-12 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.24      597.78
+  (LATEST)      595.82      597.37
+[BT] [2023-01-12 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-12 13:15:00+05:30)...
+[BT] [2023-01-12 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.82      597.37
+  (LATEST)      595.36      596.94
+[BT] [2023-01-12 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-12 14:15:00+05:30)...
+[BT] [2023-01-12 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.36      596.94
+  (LATEST)      595.06       596.6
+[BT] [2023-01-12 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-12 15:15:00+05:30)...
+[BT] [2023-01-12 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.06       596.6
+  (LATEST)      595.07      596.46
+[BT] [2023-01-12 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-12 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-12 16:15:00+05:30)...
+[BT] [2023-01-12 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-12 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-13 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-13 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-13 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-13 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-13 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.07      596.46
+  (LATEST)      595.05      596.32
+[BT] [2023-01-13 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-13 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-13 10:15:00+05:30)...
+[BT] [2023-01-13 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.05      596.32
+  (LATEST)      595.03      596.18
+[BT] [2023-01-13 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-13 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-13 11:15:00+05:30)...
+[BT] [2023-01-13 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.03      596.18
+  (LATEST)      595.11      596.12
+[BT] [2023-01-13 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-13 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-13 12:15:00+05:30)...
+[BT] [2023-01-13 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.11      596.12
+  (LATEST)      595.31      596.15
+[BT] [2023-01-13 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-13 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-13 13:15:00+05:30)...
+[BT] [2023-01-13 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.31      596.15
+  (LATEST)      596.15      596.59
+[BT] [2023-01-13 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-13 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-13 14:15:00+05:30)...
+[BT] [2023-01-13 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.15      596.59
+  (LATEST)      596.94      597.04
+[BT] [2023-01-13 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-13 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-13 15:15:00+05:30)...
+[BT] [2023-01-13 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.94      597.04
+  (LATEST)      597.45      597.35
+[BT] [2023-01-13 15:15:00,000] [INFO] [utils] Crossover: Cut upwards 
+[BT] [2023-01-13 15:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-13 15:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-13 15:15:00+05:30] [c3cf66a10e7f4c6f8f09c3789d5828b6] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-13 15:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:c3cf66a10e7f4c6f8f09c3789d5828b6] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-13 15:15:00+05:30] [c3cf66a10e7f4c6f8f09c3789d5828b6] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-13 15:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-13 15:15:00+05:30] [c3cf66a10e7f4c6f8f09c3789d5828b6] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-13 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-13 16:15:00+05:30)...
+[BT] [2023-01-13 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-13 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-13 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-01-13 15:15:00+05:30] [c3cf66a10e7f4c6f8f09c3789d5828b6] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-01-13 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-13 15:30:00+05:30] [59cc33347c7f498f961cf62531658693] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-13 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:59cc33347c7f498f961cf62531658693] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-13 15:30:00+05:30] [59cc33347c7f498f961cf62531658693] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-13 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-13 15:30:00+05:30] [59cc33347c7f498f961cf62531658693] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-16 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-16 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-16 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-16 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-16 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.45      597.35
+  (LATEST)      597.95      597.66
+[BT] [2023-01-16 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-16 10:15:00+05:30)...
+[BT] [2023-01-16 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.95      597.66
+  (LATEST)      598.89      598.27
+[BT] [2023-01-16 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-16 11:15:00+05:30)...
+[BT] [2023-01-16 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.89      598.27
+  (LATEST)      599.55      598.74
+[BT] [2023-01-16 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-16 12:15:00+05:30)...
+[BT] [2023-01-16 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      599.55      598.74
+  (LATEST)      600.01       599.1
+[BT] [2023-01-16 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-16 13:15:00+05:30)...
+[BT] [2023-01-16 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      600.01       599.1
+  (LATEST)      600.57      599.54
+[BT] [2023-01-16 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-16 14:15:00+05:30)...
+[BT] [2023-01-16 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      600.57      599.54
+  (LATEST)      600.87      599.82
+[BT] [2023-01-16 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-16 15:15:00+05:30)...
+[BT] [2023-01-16 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      600.87      599.82
+  (LATEST)      601.15      600.09
+[BT] [2023-01-16 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-16 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-16 16:15:00+05:30)...
+[BT] [2023-01-16 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-16 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-17 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-17 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-17 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-17 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-17 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      601.15      600.09
+  (LATEST)      601.44      600.38
+[BT] [2023-01-17 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-17 10:15:00+05:30)...
+[BT] [2023-01-17 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      601.44      600.38
+  (LATEST)      602.05      600.85
+[BT] [2023-01-17 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-17 11:15:00+05:30)...
+[BT] [2023-01-17 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      602.05      600.85
+  (LATEST)      602.14      601.02
+[BT] [2023-01-17 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-17 12:15:00+05:30)...
+[BT] [2023-01-17 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      602.14      601.02
+  (LATEST)      601.49      600.73
+[BT] [2023-01-17 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-17 13:15:00+05:30)...
+[BT] [2023-01-17 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      601.49      600.73
+  (LATEST)      599.91      599.82
+[BT] [2023-01-17 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-17 14:15:00+05:30)...
+[BT] [2023-01-17 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      599.91      599.82
+  (LATEST)      598.47      598.94
+[BT] [2023-01-17 14:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-01-17 14:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-17 14:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-17 14:15:00+05:30] [777366c9378a49408e4f9fb37420a73b] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 590.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-17 14:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:777366c9378a49408e4f9fb37420a73b] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-17 14:15:00+05:30] [777366c9378a49408e4f9fb37420a73b] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 590.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-17 14:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-17 14:15:00+05:30] [777366c9378a49408e4f9fb37420a73b] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 590.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-17 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-17 15:15:00+05:30)...
+[BT] [2023-01-17 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.47      598.94
+  (LATEST)      597.63      598.37
+[BT] [2023-01-17 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.47      598.94
+  (LATEST)      597.63      598.37
+[BT] [2023-01-17 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-17 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-17 16:15:00+05:30)...
+[BT] [2023-01-17 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-17 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-17 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-01-17 14:15:00+05:30] [777366c9378a49408e4f9fb37420a73b] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 590.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-01-17 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-17 15:30:00+05:30] [6d96e49891fc4853be459937598465df] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 592.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-17 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:6d96e49891fc4853be459937598465df] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-17 15:30:00+05:30] [6d96e49891fc4853be459937598465df] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 592.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-17 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-17 15:30:00+05:30] [6d96e49891fc4853be459937598465df] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 592.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-18 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-18 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-18 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-18 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-18 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.63      598.37
+  (LATEST)      596.99       597.9
+[BT] [2023-01-18 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-18 10:15:00+05:30)...
+[BT] [2023-01-18 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.99       597.9
+  (LATEST)      596.04      597.23
+[BT] [2023-01-18 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-18 11:15:00+05:30)...
+[BT] [2023-01-18 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.04      597.23
+  (LATEST)       595.2       596.6
+[BT] [2023-01-18 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-18 12:15:00+05:30)...
+[BT] [2023-01-18 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       595.2       596.6
+  (LATEST)      594.69      596.15
+[BT] [2023-01-18 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-18 13:15:00+05:30)...
+[BT] [2023-01-18 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      594.69      596.15
+  (LATEST)      593.97      595.56
+[BT] [2023-01-18 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-18 14:15:00+05:30)...
+[BT] [2023-01-18 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      593.97      595.56
+  (LATEST)      593.74      595.27
+[BT] [2023-01-18 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-18 15:15:00+05:30)...
+[BT] [2023-01-18 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      593.74      595.27
+  (LATEST)      593.32      594.86
+[BT] [2023-01-18 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-18 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-18 16:15:00+05:30)...
+[BT] [2023-01-18 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-18 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-19 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-19 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-19 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-19 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-19 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      593.32      594.86
+  (LATEST)      592.96       594.5
+[BT] [2023-01-19 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-19 10:15:00+05:30)...
+[BT] [2023-01-19 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.96       594.5
+  (LATEST)      592.55       594.1
+[BT] [2023-01-19 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-19 11:15:00+05:30)...
+[BT] [2023-01-19 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.55       594.1
+  (LATEST)      592.08      593.66
+[BT] [2023-01-19 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-19 12:15:00+05:30)...
+[BT] [2023-01-19 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.08      593.66
+  (LATEST)      591.72      593.29
+[BT] [2023-01-19 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-19 13:15:00+05:30)...
+[BT] [2023-01-19 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      591.72      593.29
+  (LATEST)      591.34       592.9
+[BT] [2023-01-19 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-19 14:15:00+05:30)...
+[BT] [2023-01-19 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      591.34       592.9
+  (LATEST)       591.1       592.6
+[BT] [2023-01-19 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-19 15:15:00+05:30)...
+[BT] [2023-01-19 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       591.1       592.6
+  (LATEST)      590.85      592.31
+[BT] [2023-01-19 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-19 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-19 16:15:00+05:30)...
+[BT] [2023-01-19 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-19 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-20 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-20 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-20 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-20 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-20 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      590.85      592.31
+  (LATEST)      590.65      592.04
+[BT] [2023-01-20 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-20 10:15:00+05:30)...
+[BT] [2023-01-20 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      590.65      592.04
+  (LATEST)      591.38      592.36
+[BT] [2023-01-20 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-20 11:15:00+05:30)...
+[BT] [2023-01-20 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      591.38      592.36
+  (LATEST)      591.88      592.58
+[BT] [2023-01-20 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-20 12:15:00+05:30)...
+[BT] [2023-01-20 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      591.88      592.58
+  (LATEST)      592.29      592.76
+[BT] [2023-01-20 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-20 13:15:00+05:30)...
+[BT] [2023-01-20 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.29      592.76
+  (LATEST)      592.78      593.02
+[BT] [2023-01-20 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-20 14:15:00+05:30)...
+[BT] [2023-01-20 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.78      593.02
+  (LATEST)      592.91      593.08
+[BT] [2023-01-20 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-20 15:15:00+05:30)...
+[BT] [2023-01-20 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.91      593.08
+  (LATEST)       592.8       593.0
+[BT] [2023-01-20 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-20 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-20 16:15:00+05:30)...
+[BT] [2023-01-20 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-20 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-23 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-23 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-23 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-23 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-23 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       592.8       593.0
+  (LATEST)      592.77      592.96
+[BT] [2023-01-23 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-23 10:15:00+05:30)...
+[BT] [2023-01-23 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      592.77      592.96
+  (LATEST)      593.69      593.51
+[BT] [2023-01-23 10:15:00,000] [INFO] [utils] Crossover: Cut upwards 
+[BT] [2023-01-23 10:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-23 10:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-23 10:15:00+05:30] [dc24d77fc1d54bed80662796bd8f9a44] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 598.7] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-23 10:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:dc24d77fc1d54bed80662796bd8f9a44] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-23 10:15:00+05:30] [dc24d77fc1d54bed80662796bd8f9a44] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 598.7] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-23 10:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-23 10:15:00+05:30] [dc24d77fc1d54bed80662796bd8f9a44] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 598.7] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-23 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-23 11:15:00+05:30)...
+[BT] [2023-01-23 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      593.69      593.51
+  (LATEST)      594.55      594.06
+[BT] [2023-01-23 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      593.69      593.51
+  (LATEST)      594.55      594.06
+[BT] [2023-01-23 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-23 12:15:00+05:30)...
+[BT] [2023-01-23 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      594.55      594.06
+  (LATEST)      595.28      594.56
+[BT] [2023-01-23 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      594.55      594.06
+  (LATEST)      595.28      594.56
+[BT] [2023-01-23 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-23 13:15:00+05:30)...
+[BT] [2023-01-23 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.28      594.56
+  (LATEST)      596.06      595.11
+[BT] [2023-01-23 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      595.28      594.56
+  (LATEST)      596.06      595.11
+[BT] [2023-01-23 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-23 14:15:00+05:30)...
+[BT] [2023-01-23 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.06      595.11
+  (LATEST)      596.75      595.63
+[BT] [2023-01-23 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.06      595.11
+  (LATEST)      596.75      595.63
+[BT] [2023-01-23 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-23 15:15:00+05:30)...
+[BT] [2023-01-23 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.75      595.63
+  (LATEST)      597.27      596.06
+[BT] [2023-01-23 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.75      595.63
+  (LATEST)      597.27      596.06
+[BT] [2023-01-23 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-23 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-23 16:15:00+05:30)...
+[BT] [2023-01-23 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-23 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-23 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-01-23 10:15:00+05:30] [dc24d77fc1d54bed80662796bd8f9a44] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 598.7] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-01-23 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-23 15:30:00+05:30] [77713e79b4a74969b7fa925cbf668ff7] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.2] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-23 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:77713e79b4a74969b7fa925cbf668ff7] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-23 15:30:00+05:30] [77713e79b4a74969b7fa925cbf668ff7] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.2] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-23 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-23 15:30:00+05:30] [77713e79b4a74969b7fa925cbf668ff7] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.2] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-24 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-24 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-24 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-24 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-24 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.27      596.06
+  (LATEST)      597.84      596.53
+[BT] [2023-01-24 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-24 10:15:00+05:30)...
+[BT] [2023-01-24 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.84      596.53
+  (LATEST)      598.38      596.99
+[BT] [2023-01-24 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-24 11:15:00+05:30)...
+[BT] [2023-01-24 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.38      596.99
+  (LATEST)       598.8      597.38
+[BT] [2023-01-24 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-24 12:15:00+05:30)...
+[BT] [2023-01-24 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       598.8      597.38
+  (LATEST)      598.71      597.46
+[BT] [2023-01-24 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-24 13:15:00+05:30)...
+[BT] [2023-01-24 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.71      597.46
+  (LATEST)      598.47      597.43
+[BT] [2023-01-24 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-24 14:15:00+05:30)...
+[BT] [2023-01-24 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      598.47      597.43
+  (LATEST)      597.97      597.22
+[BT] [2023-01-24 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-24 15:15:00+05:30)...
+[BT] [2023-01-24 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.97      597.22
+  (LATEST)      597.42      596.95
+[BT] [2023-01-24 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-24 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-24 16:15:00+05:30)...
+[BT] [2023-01-24 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-24 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-25 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-25 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-25 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-25 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-25 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      597.42      596.95
+  (LATEST)      596.88      596.66
+[BT] [2023-01-25 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-25 10:15:00+05:30)...
+[BT] [2023-01-25 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      596.88      596.66
+  (LATEST)      594.32       595.1
+[BT] [2023-01-25 10:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-01-25 10:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-01-25 10:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-25 10:15:00+05:30] [75493ca72d8e4fd08f4ac7dc874736a4] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 580.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-01-25 10:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:75493ca72d8e4fd08f4ac7dc874736a4] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-25 10:15:00+05:30] [75493ca72d8e4fd08f4ac7dc874736a4] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 580.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-25 10:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-25 10:15:00+05:30] [75493ca72d8e4fd08f4ac7dc874736a4] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 580.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-01-25 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-25 11:15:00+05:30)...
+[BT] [2023-01-25 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      594.32       595.1
+  (LATEST)       591.3      593.16
+[BT] [2023-01-25 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      594.32       595.1
+  (LATEST)       591.3      593.16
+[BT] [2023-01-25 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-25 12:15:00+05:30)...
+[BT] [2023-01-25 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       591.3      593.16
+  (LATEST)      587.88      590.86
+[BT] [2023-01-25 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       591.3      593.16
+  (LATEST)      587.88      590.86
+[BT] [2023-01-25 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-25 13:15:00+05:30)...
+[BT] [2023-01-25 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      587.88      590.86
+  (LATEST)      585.45      589.07
+[BT] [2023-01-25 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      587.88      590.86
+  (LATEST)      585.45      589.07
+[BT] [2023-01-25 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-25 14:15:00+05:30)...
+[BT] [2023-01-25 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      585.45      589.07
+  (LATEST)      583.74      587.67
+[BT] [2023-01-25 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      585.45      589.07
+  (LATEST)      583.74      587.67
+[BT] [2023-01-25 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-25 15:15:00+05:30)...
+[BT] [2023-01-25 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      583.74      587.67
+  (LATEST)      581.47      585.89
+[BT] [2023-01-25 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      583.74      587.67
+  (LATEST)      581.47      585.89
+[BT] [2023-01-25 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-25 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-25 16:15:00+05:30)...
+[BT] [2023-01-25 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-25 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-25 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-01-25 10:15:00+05:30] [75493ca72d8e4fd08f4ac7dc874736a4] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 580.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-01-25 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-01-25 15:30:00+05:30] [5d1e221834fd46dfa1565a87c6b534de] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 569.0] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-01-25 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:5d1e221834fd46dfa1565a87c6b534de] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-01-25 15:30:00+05:30] [5d1e221834fd46dfa1565a87c6b534de] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 569.0] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-01-25 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-01-25 15:30:00+05:30] [5d1e221834fd46dfa1565a87c6b534de] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 569.0] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-01-27 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-27 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-27 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-27 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-27 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      581.47      585.89
+  (LATEST)      579.35      584.16
+[BT] [2023-01-27 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-27 10:15:00+05:30)...
+[BT] [2023-01-27 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      579.35      584.16
+  (LATEST)      575.58      581.36
+[BT] [2023-01-27 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-27 11:15:00+05:30)...
+[BT] [2023-01-27 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      575.58      581.36
+  (LATEST)      572.32      578.79
+[BT] [2023-01-27 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-27 12:15:00+05:30)...
+[BT] [2023-01-27 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      572.32      578.79
+  (LATEST)       568.1      575.56
+[BT] [2023-01-27 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-27 13:15:00+05:30)...
+[BT] [2023-01-27 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       568.1      575.56
+  (LATEST)      564.51      572.63
+[BT] [2023-01-27 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-27 14:15:00+05:30)...
+[BT] [2023-01-27 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      564.51      572.63
+  (LATEST)      560.13      569.15
+[BT] [2023-01-27 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-27 15:15:00+05:30)...
+[BT] [2023-01-27 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      560.13      569.15
+  (LATEST)      556.94      566.31
+[BT] [2023-01-27 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-27 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-27 16:15:00+05:30)...
+[BT] [2023-01-27 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-27 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-30 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-30 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-30 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-30 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-30 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      556.94      566.31
+  (LATEST)      554.62      563.99
+[BT] [2023-01-30 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-30 10:15:00+05:30)...
+[BT] [2023-01-30 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      554.62      563.99
+  (LATEST)      552.38      561.71
+[BT] [2023-01-30 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-30 11:15:00+05:30)...
+[BT] [2023-01-30 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      552.38      561.71
+  (LATEST)      549.41      558.98
+[BT] [2023-01-30 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-30 12:15:00+05:30)...
+[BT] [2023-01-30 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      549.41      558.98
+  (LATEST)      547.24      556.73
+[BT] [2023-01-30 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-30 13:15:00+05:30)...
+[BT] [2023-01-30 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.24      556.73
+  (LATEST)      544.62       554.2
+[BT] [2023-01-30 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-30 14:15:00+05:30)...
+[BT] [2023-01-30 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.62       554.2
+  (LATEST)      542.49      551.97
+[BT] [2023-01-30 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-30 15:15:00+05:30)...
+[BT] [2023-01-30 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      542.49      551.97
+  (LATEST)      542.23       550.9
+[BT] [2023-01-30 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-30 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-30 16:15:00+05:30)...
+[BT] [2023-01-30 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-30 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-31 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-01-31 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-01-31 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-31 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-01-31 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      542.23       550.9
+  (LATEST)      542.09      549.99
+[BT] [2023-01-31 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-31 10:15:00+05:30)...
+[BT] [2023-01-31 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      542.09      549.99
+  (LATEST)      542.75      549.65
+[BT] [2023-01-31 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-31 11:15:00+05:30)...
+[BT] [2023-01-31 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      542.75      549.65
+  (LATEST)      544.24      549.91
+[BT] [2023-01-31 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-31 12:15:00+05:30)...
+[BT] [2023-01-31 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.24      549.91
+  (LATEST)      545.48      550.14
+[BT] [2023-01-31 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-31 13:15:00+05:30)...
+[BT] [2023-01-31 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      545.48      550.14
+  (LATEST)      547.01      550.65
+[BT] [2023-01-31 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-31 14:15:00+05:30)...
+[BT] [2023-01-31 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.01      550.65
+  (LATEST)      547.68      550.71
+[BT] [2023-01-31 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-01-31 15:15:00+05:30)...
+[BT] [2023-01-31 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.68      550.71
+  (LATEST)       548.6      550.99
+[BT] [2023-01-31 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-01-31 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-01-31 16:15:00+05:30)...
+[BT] [2023-01-31 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-01-31 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       548.6      550.99
+  (LATEST)      549.88      551.56
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-01 10:15:00+05:30)...
+[BT] [2023-02-01 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      549.88      551.56
+  (LATEST)      550.91      552.04
+[BT] [2023-02-01 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-01 11:15:00+05:30)...
+[BT] [2023-02-01 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      550.91      552.04
+  (LATEST)      551.66      552.39
+[BT] [2023-02-01 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-01 12:15:00+05:30)...
+[BT] [2023-02-01 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      551.66      552.39
+  (LATEST)      551.68      552.34
+[BT] [2023-02-01 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-01 13:15:00+05:30)...
+[BT] [2023-02-01 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      551.68      552.34
+  (LATEST)      553.08      553.14
+[BT] [2023-02-01 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-01 14:15:00+05:30)...
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      553.08      553.14
+  (LATEST)       551.2      551.97
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-01 15:15:00+05:30)...
+[BT] [2023-02-01 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       551.2      551.97
+  (LATEST)      547.46      549.58
+[BT] [2023-02-01 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-01 16:15:00+05:30)...
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-02 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.46      549.58
+  (LATEST)      544.31      547.43
+[BT] [2023-02-02 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-02 10:15:00+05:30)...
+[BT] [2023-02-02 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.31      547.43
+  (LATEST)      541.12      545.16
+[BT] [2023-02-02 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-02 11:15:00+05:30)...
+[BT] [2023-02-02 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.12      545.16
+  (LATEST)      538.47      543.14
+[BT] [2023-02-02 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-02 12:15:00+05:30)...
+[BT] [2023-02-02 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.47      543.14
+  (LATEST)      536.16      541.26
+[BT] [2023-02-02 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-02 13:15:00+05:30)...
+[BT] [2023-02-02 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      536.16      541.26
+  (LATEST)      533.91      539.38
+[BT] [2023-02-02 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-02 14:15:00+05:30)...
+[BT] [2023-02-02 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      533.91      539.38
+  (LATEST)      532.12      537.75
+[BT] [2023-02-02 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-02 15:15:00+05:30)...
+[BT] [2023-02-02 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      532.12      537.75
+  (LATEST)      531.33      536.73
+[BT] [2023-02-02 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-02 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-02 16:15:00+05:30)...
+[BT] [2023-02-02 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-03 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-03 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-03 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-03 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-03 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      531.33      536.73
+  (LATEST)      531.44      536.28
+[BT] [2023-02-03 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-03 10:15:00+05:30)...
+[BT] [2023-02-03 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      531.44      536.28
+  (LATEST)      531.39      535.79
+[BT] [2023-02-03 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-03 11:15:00+05:30)...
+[BT] [2023-02-03 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      531.39      535.79
+  (LATEST)      530.48      534.81
+[BT] [2023-02-03 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-03 12:15:00+05:30)...
+[BT] [2023-02-03 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      530.48      534.81
+  (LATEST)      530.32      534.29
+[BT] [2023-02-03 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-03 13:15:00+05:30)...
+[BT] [2023-02-03 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      530.32      534.29
+  (LATEST)      530.61       534.1
+[BT] [2023-02-03 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-03 14:15:00+05:30)...
+[BT] [2023-02-03 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      530.61       534.1
+  (LATEST)       532.0      534.63
+[BT] [2023-02-03 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-03 15:15:00+05:30)...
+[BT] [2023-02-03 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       532.0      534.63
+  (LATEST)      533.87      535.53
+[BT] [2023-02-03 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-03 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-03 16:15:00+05:30)...
+[BT] [2023-02-03 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-03 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-06 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-06 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-06 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-06 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-06 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      533.87      535.53
+  (LATEST)       535.6      536.45
+[BT] [2023-02-06 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-06 10:15:00+05:30)...
+[BT] [2023-02-06 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       535.6      536.45
+  (LATEST)      536.95       537.2
+[BT] [2023-02-06 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-06 11:15:00+05:30)...
+[BT] [2023-02-06 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      536.95       537.2
+  (LATEST)      537.85      537.73
+[BT] [2023-02-06 11:15:00,000] [INFO] [utils] Crossover: Cut upwards 
+[BT] [2023-02-06 11:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-02-06 11:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-06 11:15:00+05:30] [c639613bdb614ce48062b26bf618ee26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-06 11:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:c639613bdb614ce48062b26bf618ee26] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-06 11:15:00+05:30] [c639613bdb614ce48062b26bf618ee26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-06 11:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-06 11:15:00+05:30] [c639613bdb614ce48062b26bf618ee26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-06 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-06 12:15:00+05:30)...
+[BT] [2023-02-06 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      537.85      537.73
+  (LATEST)      538.95      538.42
+[BT] [2023-02-06 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      537.85      537.73
+  (LATEST)      538.95      538.42
+[BT] [2023-02-06 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-06 13:15:00+05:30)...
+[BT] [2023-02-06 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.95      538.42
+  (LATEST)      539.86      539.04
+[BT] [2023-02-06 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.95      538.42
+  (LATEST)      539.86      539.04
+[BT] [2023-02-06 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-06 14:15:00+05:30)...
+[BT] [2023-02-06 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      539.86      539.04
+  (LATEST)      540.88      539.75
+[BT] [2023-02-06 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      539.86      539.04
+  (LATEST)      540.88      539.75
+[BT] [2023-02-06 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-06 15:15:00+05:30)...
+[BT] [2023-02-06 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.88      539.75
+  (LATEST)      541.66      540.34
+[BT] [2023-02-06 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.88      539.75
+  (LATEST)      541.66      540.34
+[BT] [2023-02-06 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-06 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-06 16:15:00+05:30)...
+[BT] [2023-02-06 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-06 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-06 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-02-06 11:15:00+05:30] [c639613bdb614ce48062b26bf618ee26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-02-06 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-06 15:30:00+05:30] [0c93aed77c544987942914da6e3b7aad] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 545.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-06 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:0c93aed77c544987942914da6e3b7aad] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-06 15:30:00+05:30] [0c93aed77c544987942914da6e3b7aad] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 545.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-06 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-06 15:30:00+05:30] [0c93aed77c544987942914da6e3b7aad] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 545.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-07 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-07 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-07 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-07 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-07 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.66      540.34
+  (LATEST)      541.95      540.65
+[BT] [2023-02-07 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-07 10:15:00+05:30)...
+[BT] [2023-02-07 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.95      540.65
+  (LATEST)      542.76      541.27
+[BT] [2023-02-07 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-07 11:15:00+05:30)...
+[BT] [2023-02-07 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      542.76      541.27
+  (LATEST)      543.86      542.09
+[BT] [2023-02-07 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-07 12:15:00+05:30)...
+[BT] [2023-02-07 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      543.86      542.09
+  (LATEST)       544.7      542.78
+[BT] [2023-02-07 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-07 13:15:00+05:30)...
+[BT] [2023-02-07 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       544.7      542.78
+  (LATEST)      544.45      542.81
+[BT] [2023-02-07 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-07 14:15:00+05:30)...
+[BT] [2023-02-07 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.45      542.81
+  (LATEST)      544.67       543.1
+[BT] [2023-02-07 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-07 15:15:00+05:30)...
+[BT] [2023-02-07 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.67       543.1
+  (LATEST)      545.02      543.47
+[BT] [2023-02-07 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-07 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-07 16:15:00+05:30)...
+[BT] [2023-02-07 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-07 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-08 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-08 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-08 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-08 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-08 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      545.02      543.47
+  (LATEST)       545.2      543.73
+[BT] [2023-02-08 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-08 10:15:00+05:30)...
+[BT] [2023-02-08 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       545.2      543.73
+  (LATEST)      546.37      544.59
+[BT] [2023-02-08 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-08 11:15:00+05:30)...
+[BT] [2023-02-08 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      546.37      544.59
+  (LATEST)      546.82      545.04
+[BT] [2023-02-08 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-08 12:15:00+05:30)...
+[BT] [2023-02-08 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      546.82      545.04
+  (LATEST)      547.12       545.4
+[BT] [2023-02-08 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-08 13:15:00+05:30)...
+[BT] [2023-02-08 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.12       545.4
+  (LATEST)      547.34       545.7
+[BT] [2023-02-08 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-08 14:15:00+05:30)...
+[BT] [2023-02-08 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.34       545.7
+  (LATEST)      547.58       546.0
+[BT] [2023-02-08 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-08 15:15:00+05:30)...
+[BT] [2023-02-08 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.58       546.0
+  (LATEST)      547.93      546.37
+[BT] [2023-02-08 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-08 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-08 16:15:00+05:30)...
+[BT] [2023-02-08 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-08 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-09 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-09 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-09 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-09 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-09 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.93      546.37
+  (LATEST)      548.31      546.75
+[BT] [2023-02-09 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-09 10:15:00+05:30)...
+[BT] [2023-02-09 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      548.31      546.75
+  (LATEST)       548.2      546.83
+[BT] [2023-02-09 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-09 11:15:00+05:30)...
+[BT] [2023-02-09 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       548.2      546.83
+  (LATEST)      548.13      546.92
+[BT] [2023-02-09 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-09 12:15:00+05:30)...
+[BT] [2023-02-09 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      548.13      546.92
+  (LATEST)      547.93      546.91
+[BT] [2023-02-09 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-09 13:15:00+05:30)...
+[BT] [2023-02-09 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.93      546.91
+  (LATEST)      547.82      546.94
+[BT] [2023-02-09 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-09 14:15:00+05:30)...
+[BT] [2023-02-09 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      547.82      546.94
+  (LATEST)      548.23      547.28
+[BT] [2023-02-09 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-09 15:15:00+05:30)...
+[BT] [2023-02-09 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      548.23      547.28
+  (LATEST)      548.65      547.63
+[BT] [2023-02-09 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-09 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-09 16:15:00+05:30)...
+[BT] [2023-02-09 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-09 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-10 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-10 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-10 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-10 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-10 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      548.65      547.63
+  (LATEST)      549.01      547.95
+[BT] [2023-02-10 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-10 10:15:00+05:30)...
+[BT] [2023-02-10 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      549.01      547.95
+  (LATEST)      550.08      548.71
+[BT] [2023-02-10 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-10 11:15:00+05:30)...
+[BT] [2023-02-10 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      550.08      548.71
+  (LATEST)      550.82       549.3
+[BT] [2023-02-10 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-10 12:15:00+05:30)...
+[BT] [2023-02-10 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      550.82       549.3
+  (LATEST)      551.57      549.91
+[BT] [2023-02-10 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-10 13:15:00+05:30)...
+[BT] [2023-02-10 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      551.57      549.91
+  (LATEST)      551.82      550.22
+[BT] [2023-02-10 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-10 14:15:00+05:30)...
+[BT] [2023-02-10 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      551.82      550.22
+  (LATEST)      552.12      550.56
+[BT] [2023-02-10 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-10 15:15:00+05:30)...
+[BT] [2023-02-10 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      552.12      550.56
+  (LATEST)      552.29      550.81
+[BT] [2023-02-10 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-10 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-10 16:15:00+05:30)...
+[BT] [2023-02-10 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-10 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-13 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-13 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-13 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-13 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-13 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      552.29      550.81
+  (LATEST)      552.38      551.01
+[BT] [2023-02-13 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-13 10:15:00+05:30)...
+[BT] [2023-02-13 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      552.38      551.01
+  (LATEST)      550.35      549.88
+[BT] [2023-02-13 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-13 11:15:00+05:30)...
+[BT] [2023-02-13 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      550.35      549.88
+  (LATEST)      548.13      548.55
+[BT] [2023-02-13 11:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-02-13 11:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-02-13 11:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-13 11:15:00+05:30] [f26a915cdb094957a0cda4ded9f8ca74] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 535.95] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-13 11:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:f26a915cdb094957a0cda4ded9f8ca74] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-13 11:15:00+05:30] [f26a915cdb094957a0cda4ded9f8ca74] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 535.95] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-13 11:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-13 11:15:00+05:30] [f26a915cdb094957a0cda4ded9f8ca74] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 535.95] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-13 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-13 12:15:00+05:30)...
+[BT] [2023-02-13 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      548.13      548.55
+  (LATEST)      546.49       547.5
+[BT] [2023-02-13 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      548.13      548.55
+  (LATEST)      546.49       547.5
+[BT] [2023-02-13 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-13 13:15:00+05:30)...
+[BT] [2023-02-13 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      546.49       547.5
+  (LATEST)      544.97      546.46
+[BT] [2023-02-13 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      546.49       547.5
+  (LATEST)      544.97      546.46
+[BT] [2023-02-13 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-13 14:15:00+05:30)...
+[BT] [2023-02-13 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.97      546.46
+  (LATEST)       543.7      545.53
+[BT] [2023-02-13 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      544.97      546.46
+  (LATEST)       543.7      545.53
+[BT] [2023-02-13 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-13 15:15:00+05:30)...
+[BT] [2023-02-13 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       543.7      545.53
+  (LATEST)      542.76      544.78
+[BT] [2023-02-13 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       543.7      545.53
+  (LATEST)      542.76      544.78
+[BT] [2023-02-13 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-13 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-13 16:15:00+05:30)...
+[BT] [2023-02-13 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-13 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-13 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-02-13 11:15:00+05:30] [f26a915cdb094957a0cda4ded9f8ca74] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 535.95] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-02-13 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-13 15:30:00+05:30] [695a23402f8649e0973464679749cc26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 537.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-13 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:695a23402f8649e0973464679749cc26] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-13 15:30:00+05:30] [695a23402f8649e0973464679749cc26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 537.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-13 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-13 15:30:00+05:30] [695a23402f8649e0973464679749cc26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 537.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-14 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-14 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-14 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-14 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-14 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      542.76      544.78
+  (LATEST)      541.89      544.04
+[BT] [2023-02-14 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-14 10:15:00+05:30)...
+[BT] [2023-02-14 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.89      544.04
+  (LATEST)      540.72      543.12
+[BT] [2023-02-14 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-14 11:15:00+05:30)...
+[BT] [2023-02-14 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.72      543.12
+  (LATEST)      539.66      542.23
+[BT] [2023-02-14 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-14 12:15:00+05:30)...
+[BT] [2023-02-14 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      539.66      542.23
+  (LATEST)      538.96      541.55
+[BT] [2023-02-14 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-14 13:15:00+05:30)...
+[BT] [2023-02-14 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.96      541.55
+  (LATEST)       538.5      541.02
+[BT] [2023-02-14 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-14 14:15:00+05:30)...
+[BT] [2023-02-14 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       538.5      541.02
+  (LATEST)      538.62      540.86
+[BT] [2023-02-14 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-14 15:15:00+05:30)...
+[BT] [2023-02-14 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.62      540.86
+  (LATEST)      538.94      540.84
+[BT] [2023-02-14 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-14 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-14 16:15:00+05:30)...
+[BT] [2023-02-14 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-14 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-15 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-15 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-15 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-15 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-15 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.94      540.84
+  (LATEST)      539.25      540.85
+[BT] [2023-02-15 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-15 10:15:00+05:30)...
+[BT] [2023-02-15 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      539.25      540.85
+  (LATEST)      539.69      540.97
+[BT] [2023-02-15 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-15 11:15:00+05:30)...
+[BT] [2023-02-15 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      539.69      540.97
+  (LATEST)      540.29      541.22
+[BT] [2023-02-15 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-15 12:15:00+05:30)...
+[BT] [2023-02-15 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.29      541.22
+  (LATEST)      540.46      541.24
+[BT] [2023-02-15 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-15 13:15:00+05:30)...
+[BT] [2023-02-15 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.46      541.24
+  (LATEST)      540.29      541.06
+[BT] [2023-02-15 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-15 14:15:00+05:30)...
+[BT] [2023-02-15 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.29      541.06
+  (LATEST)      540.22      540.94
+[BT] [2023-02-15 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-15 15:15:00+05:30)...
+[BT] [2023-02-15 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.22      540.94
+  (LATEST)       540.5      541.04
+[BT] [2023-02-15 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-15 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-15 16:15:00+05:30)...
+[BT] [2023-02-15 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-15 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-16 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-16 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-16 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-16 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-16 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       540.5      541.04
+  (LATEST)      540.85      541.21
+[BT] [2023-02-16 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-16 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-16 10:15:00+05:30)...
+[BT] [2023-02-16 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.85      541.21
+  (LATEST)      541.32      541.47
+[BT] [2023-02-16 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-16 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-16 11:15:00+05:30)...
+[BT] [2023-02-16 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.32      541.47
+  (LATEST)      541.41      541.51
+[BT] [2023-02-16 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-16 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-16 12:15:00+05:30)...
+[BT] [2023-02-16 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.41      541.51
+  (LATEST)      541.52      541.57
+[BT] [2023-02-16 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-16 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-16 13:15:00+05:30)...
+[BT] [2023-02-16 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.52      541.57
+  (LATEST)      541.66      541.65
+[BT] [2023-02-16 13:15:00,000] [INFO] [utils] Crossover: Cut upwards 
+[BT] [2023-02-16 13:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-02-16 13:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-16 13:15:00+05:30] [d26b3d299dd443a5a8ac28dcac507361] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.3] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-16 13:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:d26b3d299dd443a5a8ac28dcac507361] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-16 13:15:00+05:30] [d26b3d299dd443a5a8ac28dcac507361] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.3] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-16 13:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-16 13:15:00+05:30] [d26b3d299dd443a5a8ac28dcac507361] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 542.3] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-16 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-16 14:15:00+05:30)...
+[BT] [2023-02-16 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.66      541.65
+  (LATEST)      541.82      541.75
+[BT] [2023-02-16 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-16 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.66      541.65
+  (LATEST)      541.82      541.75
+[BT] [2023-02-16 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-16 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-16 15:15:00+05:30)...
+[BT] [2023-02-16 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.82      541.75
+  (LATEST)      541.55      541.59
+[BT] [2023-02-16 15:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-02-16 15:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-16 15:15:00+05:30] [f1b0d404352f41d897a00e73d70cc055] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-16 15:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:f1b0d404352f41d897a00e73d70cc055] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-16 15:15:00+05:30] [f1b0d404352f41d897a00e73d70cc055] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-16 15:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-16 15:15:00+05:30] [f1b0d404352f41d897a00e73d70cc055] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-16 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.82      541.75
+  (LATEST)      541.55      541.59
+[BT] [2023-02-16 15:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-02-16 15:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-02-16 15:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-16 15:15:00+05:30] [ea12400121324ba4b8ba4b59d00cdb75] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-16 15:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:ea12400121324ba4b8ba4b59d00cdb75] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-16 15:15:00+05:30] [ea12400121324ba4b8ba4b59d00cdb75] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-16 15:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-16 15:15:00+05:30] [ea12400121324ba4b8ba4b59d00cdb75] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-16 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-16 16:15:00+05:30)...
+[BT] [2023-02-16 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-16 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-16 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-02-16 15:15:00+05:30] [ea12400121324ba4b8ba4b59d00cdb75] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-02-16 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-16 15:30:00+05:30] [50cf5b3bad114806b0a796a28850ec85] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-16 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:50cf5b3bad114806b0a796a28850ec85] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-16 15:30:00+05:30] [50cf5b3bad114806b0a796a28850ec85] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-16 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-16 15:30:00+05:30] [50cf5b3bad114806b0a796a28850ec85] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-17 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-17 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-17 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-17 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-17 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.55      541.59
+  (LATEST)      541.16      541.35
+[BT] [2023-02-17 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-17 10:15:00+05:30)...
+[BT] [2023-02-17 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      541.16      541.35
+  (LATEST)      540.43      540.87
+[BT] [2023-02-17 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-17 11:15:00+05:30)...
+[BT] [2023-02-17 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      540.43      540.87
+  (LATEST)      539.59      540.31
+[BT] [2023-02-17 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-17 12:15:00+05:30)...
+[BT] [2023-02-17 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      539.59      540.31
+  (LATEST)      538.61      539.64
+[BT] [2023-02-17 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-17 13:15:00+05:30)...
+[BT] [2023-02-17 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      538.61      539.64
+  (LATEST)      537.16      538.64
+[BT] [2023-02-17 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-17 14:15:00+05:30)...
+[BT] [2023-02-17 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      537.16      538.64
+  (LATEST)      536.05      537.81
+[BT] [2023-02-17 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-17 15:15:00+05:30)...
+[BT] [2023-02-17 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      536.05      537.81
+  (LATEST)       535.3      537.18
+[BT] [2023-02-17 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-17 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-17 16:15:00+05:30)...
+[BT] [2023-02-17 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-17 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-20 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-20 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-20 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-20 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-20 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       535.3      537.18
+  (LATEST)      534.58      536.55
+[BT] [2023-02-20 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-20 10:15:00+05:30)...
+[BT] [2023-02-20 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      534.58      536.55
+  (LATEST)       534.0      536.01
+[BT] [2023-02-20 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-20 11:15:00+05:30)...
+[BT] [2023-02-20 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       534.0      536.01
+  (LATEST)      533.18      535.31
+[BT] [2023-02-20 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-20 12:15:00+05:30)...
+[BT] [2023-02-20 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      533.18      535.31
+  (LATEST)      532.08      534.43
+[BT] [2023-02-20 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-20 13:15:00+05:30)...
+[BT] [2023-02-20 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      532.08      534.43
+  (LATEST)      531.54      533.87
+[BT] [2023-02-20 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-20 14:15:00+05:30)...
+[BT] [2023-02-20 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      531.54      533.87
+  (LATEST)      530.49       533.0
+[BT] [2023-02-20 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-20 15:15:00+05:30)...
+[BT] [2023-02-20 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      530.49       533.0
+  (LATEST)       529.7      532.27
+[BT] [2023-02-20 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-20 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-20 16:15:00+05:30)...
+[BT] [2023-02-20 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-20 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-21 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-21 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-21 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-21 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-21 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       529.7      532.27
+  (LATEST)      529.01       531.6
+[BT] [2023-02-21 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-21 10:15:00+05:30)...
+[BT] [2023-02-21 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      529.01       531.6
+  (LATEST)       528.8      531.22
+[BT] [2023-02-21 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-21 11:15:00+05:30)...
+[BT] [2023-02-21 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       528.8      531.22
+  (LATEST)      528.67      530.91
+[BT] [2023-02-21 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-21 12:15:00+05:30)...
+[BT] [2023-02-21 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      528.67      530.91
+  (LATEST)      528.24      530.43
+[BT] [2023-02-21 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-21 13:15:00+05:30)...
+[BT] [2023-02-21 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      528.24      530.43
+  (LATEST)      527.75      529.92
+[BT] [2023-02-21 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-21 14:15:00+05:30)...
+[BT] [2023-02-21 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      527.75      529.92
+  (LATEST)      527.52      529.57
+[BT] [2023-02-21 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-21 15:15:00+05:30)...
+[BT] [2023-02-21 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      527.52      529.57
+  (LATEST)      526.82      528.94
+[BT] [2023-02-21 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-21 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-21 16:15:00+05:30)...
+[BT] [2023-02-21 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-21 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-22 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-22 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-22 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-22 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-22 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      526.82      528.94
+  (LATEST)      526.36      528.45
+[BT] [2023-02-22 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-22 10:15:00+05:30)...
+[BT] [2023-02-22 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      526.36      528.45
+  (LATEST)       525.1      527.48
+[BT] [2023-02-22 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-22 11:15:00+05:30)...
+[BT] [2023-02-22 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       525.1      527.48
+  (LATEST)       523.8      526.44
+[BT] [2023-02-22 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-22 12:15:00+05:30)...
+[BT] [2023-02-22 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       523.8      526.44
+  (LATEST)      522.58      525.44
+[BT] [2023-02-22 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-22 13:15:00+05:30)...
+[BT] [2023-02-22 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      522.58      525.44
+  (LATEST)      521.59      524.55
+[BT] [2023-02-22 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-22 14:15:00+05:30)...
+[BT] [2023-02-22 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      521.59      524.55
+  (LATEST)      520.34       523.5
+[BT] [2023-02-22 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-22 15:15:00+05:30)...
+[BT] [2023-02-22 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      520.34       523.5
+  (LATEST)      519.75      522.83
+[BT] [2023-02-22 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-22 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-22 16:15:00+05:30)...
+[BT] [2023-02-22 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-22 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-23 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-23 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-23 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-23 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-23 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      519.75      522.83
+  (LATEST)      519.29      522.25
+[BT] [2023-02-23 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-23 10:15:00+05:30)...
+[BT] [2023-02-23 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      519.29      522.25
+  (LATEST)      519.28      521.97
+[BT] [2023-02-23 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-23 11:15:00+05:30)...
+[BT] [2023-02-23 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      519.28      521.97
+  (LATEST)      519.23      521.68
+[BT] [2023-02-23 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-23 12:15:00+05:30)...
+[BT] [2023-02-23 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      519.23      521.68
+  (LATEST)      518.82      521.19
+[BT] [2023-02-23 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-23 13:15:00+05:30)...
+[BT] [2023-02-23 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      518.82      521.19
+  (LATEST)      519.06      521.12
+[BT] [2023-02-23 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-23 14:15:00+05:30)...
+[BT] [2023-02-23 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      519.06      521.12
+  (LATEST)       519.5      521.19
+[BT] [2023-02-23 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-23 15:15:00+05:30)...
+[BT] [2023-02-23 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       519.5      521.19
+  (LATEST)      519.56      521.07
+[BT] [2023-02-23 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-23 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-23 16:15:00+05:30)...
+[BT] [2023-02-23 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-23 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-24 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-24 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-24 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-24 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-24 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      519.56      521.07
+  (LATEST)      520.09      521.25
+[BT] [2023-02-24 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-24 10:15:00+05:30)...
+[BT] [2023-02-24 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      520.09      521.25
+  (LATEST)      520.48      521.38
+[BT] [2023-02-24 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-24 11:15:00+05:30)...
+[BT] [2023-02-24 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      520.48      521.38
+  (LATEST)      520.86      521.53
+[BT] [2023-02-24 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-24 12:15:00+05:30)...
+[BT] [2023-02-24 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      520.86      521.53
+  (LATEST)      521.12      521.63
+[BT] [2023-02-24 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-24 13:15:00+05:30)...
+[BT] [2023-02-24 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      521.12      521.63
+  (LATEST)      521.16       521.6
+[BT] [2023-02-24 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-24 14:15:00+05:30)...
+[BT] [2023-02-24 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      521.16       521.6
+  (LATEST)      520.99      521.46
+[BT] [2023-02-24 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-24 15:15:00+05:30)...
+[BT] [2023-02-24 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      520.99      521.46
+  (LATEST)      521.08      521.47
+[BT] [2023-02-24 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-24 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-24 16:15:00+05:30)...
+[BT] [2023-02-24 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-24 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-27 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-27 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-27 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-27 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-27 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      521.08      521.47
+  (LATEST)      521.14      521.47
+[BT] [2023-02-27 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-27 10:15:00+05:30)...
+[BT] [2023-02-27 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      521.14      521.47
+  (LATEST)      521.24       521.5
+[BT] [2023-02-27 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-27 11:15:00+05:30)...
+[BT] [2023-02-27 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      521.24       521.5
+  (LATEST)       521.8      521.82
+[BT] [2023-02-27 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-27 12:15:00+05:30)...
+[BT] [2023-02-27 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       521.8      521.82
+  (LATEST)      522.33      522.15
+[BT] [2023-02-27 12:15:00,000] [INFO] [utils] Crossover: Cut upwards 
+[BT] [2023-02-27 12:15:00,000] [INFO] [tls] Entering position for instrument: NSE_EQ:SBIN...
+[BT] [2023-02-27 12:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-27 12:15:00+05:30] [082f3da7c6264b428d80aef15a6d79dc] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 525.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-27 12:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:082f3da7c6264b428d80aef15a6d79dc] [BUY] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-27 12:15:00+05:30] [082f3da7c6264b428d80aef15a6d79dc] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 525.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-27 12:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-27 12:15:00+05:30] [082f3da7c6264b428d80aef15a6d79dc] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 525.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-27 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-27 13:15:00+05:30)...
+[BT] [2023-02-27 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      522.33      522.15
+  (LATEST)      522.57      522.31
+[BT] [2023-02-27 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      522.33      522.15
+  (LATEST)      522.57      522.31
+[BT] [2023-02-27 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-27 14:15:00+05:30)...
+[BT] [2023-02-27 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      522.57      522.31
+  (LATEST)      523.35      522.82
+[BT] [2023-02-27 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      522.57      522.31
+  (LATEST)      523.35      522.82
+[BT] [2023-02-27 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-27 15:15:00+05:30)...
+[BT] [2023-02-27 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      523.35      522.82
+  (LATEST)      524.03      523.29
+[BT] [2023-02-27 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      523.35      522.82
+  (LATEST)      524.03      523.29
+[BT] [2023-02-27 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-27 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-27 16:15:00+05:30)...
+[BT] [2023-02-27 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-27 15:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-27 15:30:00,000] [INFO] [oms] Exiting OPEN POSITION (Order: [2023-02-27 12:15:00+05:30] [082f3da7c6264b428d80aef15a6d79dc] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 525.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])... 
+[BT] [2023-02-27 15:30:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-27 15:30:00+05:30] [c34982d04eb8470b8fa19192b756c719] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 527.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-27 15:30:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:c34982d04eb8470b8fa19192b756c719] [SELL] [NSE_EQ:SBIN] [Order ID: (Order: [2023-02-27 15:30:00+05:30] [c34982d04eb8470b8fa19192b756c719] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 527.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-27 15:30:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-27 15:30:00+05:30] [c34982d04eb8470b8fa19192b756c719] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 527.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-28 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-28 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-28 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-28 09:15:00+05:30 for NSE_EQ:SBIN 
+[BT] [2023-02-28 09:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      524.03      523.29
+  (LATEST)      524.57       523.7
+[BT] [2023-02-28 09:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 09:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-28 10:15:00+05:30)...
+[BT] [2023-02-28 10:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      524.57       523.7
+  (LATEST)      524.55      523.77
+[BT] [2023-02-28 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 10:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-28 11:15:00+05:30)...
+[BT] [2023-02-28 11:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      524.55      523.77
+  (LATEST)       524.6      523.88
+[BT] [2023-02-28 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 11:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-28 12:15:00+05:30)...
+[BT] [2023-02-28 12:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)       524.6      523.88
+  (LATEST)      524.73      524.02
+[BT] [2023-02-28 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 12:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-28 13:15:00+05:30)...
+[BT] [2023-02-28 13:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      524.73      524.02
+  (LATEST)      524.93      524.21
+[BT] [2023-02-28 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 13:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-28 14:15:00+05:30)...
+[BT] [2023-02-28 14:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      524.93      524.21
+  (LATEST)      524.49      524.01
+[BT] [2023-02-28 14:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 14:15:00,000] [INFO] [clock] Waiting for 3600.00 seconds until end of current candle (2023-02-28 15:15:00+05:30)...
+[BT] [2023-02-28 15:15:00,000] [INFO] [utils] Crossover Details:
+         #        val1        val2
+(PREVIOUS)      524.49      524.01
+  (LATEST)      524.27      523.92
+[BT] [2023-02-28 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-28 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-28 16:15:00+05:30)...
+[BT] [2023-02-28 15:30:00,000] [INFO] [clock] Candle generation has been stopped...
+[BT] [2023-02-28 15:30:00,000] [INFO] [tls] Received event END OF MARKET. Stopping AlgoBulls Trading Core Engine...
+[BT] [2023-02-28 15:30:00,000] [INFO] [tls] Cancelling all open orders (if any)...
+[BT] [2023-02-28 15:30:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_INTRADAY (if any)...
+[BT] [2023-02-28 15:30:00,000] [INFO] [oms] 
+
+PENDING ORDERS:
+
+
+COMPLETED ORDERS:
+[2023-01-04 12:15:00+05:30] [44fd8a5f112940aa91dd70f06a6caa72] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 604.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-04 15:30:00+05:30] [1651b20892874f7787bd991276edf00c] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 605.5] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-10 09:15:00+05:30] [313890708ca1434a81cac4d401a97e7f] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 608.45] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-10 10:15:00+05:30] [5a12e31621884351ade09f2bfd2f041c] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-10 10:15:00+05:30] [4cb7336bd0c24457b23eba47298adc13] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 599.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-10 15:30:00+05:30] [553beabb20ba4723b9afb7f15a1480a8] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 595.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-13 15:15:00+05:30] [c3cf66a10e7f4c6f8f09c3789d5828b6] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-13 15:30:00+05:30] [59cc33347c7f498f961cf62531658693] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.25] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-17 14:15:00+05:30] [777366c9378a49408e4f9fb37420a73b] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 590.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-17 15:30:00+05:30] [6d96e49891fc4853be459937598465df] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 592.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-23 10:15:00+05:30] [dc24d77fc1d54bed80662796bd8f9a44] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 598.7] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-23 15:30:00+05:30] [77713e79b4a74969b7fa925cbf668ff7] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 600.2] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-25 10:15:00+05:30] [75493ca72d8e4fd08f4ac7dc874736a4] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 580.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-01-25 15:30:00+05:30] [5d1e221834fd46dfa1565a87c6b534de] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 569.0] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-06 11:15:00+05:30] [c639613bdb614ce48062b26bf618ee26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 542.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-06 15:30:00+05:30] [0c93aed77c544987942914da6e3b7aad] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 545.9] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-13 11:15:00+05:30] [f26a915cdb094957a0cda4ded9f8ca74] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 535.95] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-13 15:30:00+05:30] [695a23402f8649e0973464679749cc26] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 537.55] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-16 13:15:00+05:30] [d26b3d299dd443a5a8ac28dcac507361] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 542.3] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-16 15:15:00+05:30] [f1b0d404352f41d897a00e73d70cc055] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-16 15:15:00+05:30] [ea12400121324ba4b8ba4b59d00cdb75] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-16 15:30:00+05:30] [50cf5b3bad114806b0a796a28850ec85] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 540.35] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-27 12:15:00+05:30] [082f3da7c6264b428d80aef15a6d79dc] [BUY] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 0] [ENTRY PRICE: 525.1] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-27 15:30:00+05:30] [c34982d04eb8470b8fa19192b756c719] [SELL] [NSE_EQ:SBIN] [QTY:2] [QTY PENDING: 2] [ENTRY PRICE: 527.75] [PRICE:None] [TRIGGER PRICE:None] [EXIT MODE:POS_QTY][ORDER_TYPE_REGULAR] [ORDER_CODE_INTRADAY] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+
+POSITIONS:
+
+
+HOLDINGS:
+
+
+
+
+[BT] [2023-02-28 15:30:00,000] [INFO] [tls] [User: ALGOBULLS VIRTUAL USER] Trading session completed
